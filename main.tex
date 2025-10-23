@@ -1,0 +1,454 @@
+% teamnote.sty from https://github.com/ho94949/teamnote.sty
+
+% Team Note of ATRI
+% These codes should be guaranteed, fast enough, short and easy to type.
+
+\documentclass[landscape, 8pt, a4paper, twocolumn]{extarticle} % twocolumn
+\usepackage{kotex}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{teamnote}
+
+\teamnote{Myongji University}{ATRI}{Ji Chan Kim, Seong Min Jeon, Myeong Geun Hwang}
+
+% Guide to use
+  % Fix school name, team name, and teammate name at line 14
+  % If you want to change to 3 columns document...
+    % Erase `twocolumn' at line 6
+    % Add `\begin{multicols*}{3}' after `\begin{document}'
+    % Add `\end{multicols*}' before `\end{document}'
+    % (optional) Add `\vfill\null\columnbreak' after `\maketitlepage' and Erase `\pagebreak' before first section
+  % If you want to reduce margin size
+    % Change teamnote.sty line 3 to...
+    % \usepackage[left=0.3cm,right=0.3cm,top=0.6cm,bottom=0.3cm,headsep=0.1cm,a4paper]{geometry}
+
+\ShowUsage
+\ShowComplexity
+\HideAuthor
+
+\begin{document}
+
+\maketitlepage
+
+% Make Pagebreak if you want.
+% \pagebreak 
+
+\section{Data Structure}
+
+\Algorithm{DSU}
+{call init() before use}{}
+{cpp}{code/cpp/DataStructure/dsu.cpp}
+{kENN3N}
+
+\Algorithm{Fenwick}
+{}{}
+{cpp}{code/cpp/DataStructure/fenwick.cpp}
+{kENN3N}
+
+\Algorithm{Line Container(cht)}
+{}{}
+{cpp}{code/cpp/DataStructure/lineContainer.cpp}
+{kENN3N}
+
+\Algorithm{Matrix}
+{}{}
+{cpp}{code/cpp/DataStructure/matrix.cpp}
+{kENN3N}
+
+\Algorithm{PBDS(ordered set)}
+{}{}
+{cpp}{code/cpp/DataStructure/pbds.cpp}
+{kENN3N}
+
+\Algorithm{Rope and Crope}
+{}{}
+{cpp}{code/cpp/DataStructure/rope.cpp}
+{kENN3N}
+
+\Algorithm{Lazy Reversible BBST(Splay)}
+{}{}
+{cpp}{code/cpp/DataStructure/splay.cpp}
+{kENN3N}
+
+\Algorithm{Segment Tree}
+{}{}
+{cpp}{code/cpp/DataStructure/seg.cpp}
+{kENN3N}
+
+\Algorithm{Lazy Segment Tree}
+{}{}
+{cpp}{code/cpp/DataStructure/lazyseg.cpp}
+{kENN3N}
+
+\pagebreak 
+\section{Monoid}
+
+\Algorithm{RMQ and RNQ}
+{}{}
+{cpp}{code/cpp/Monoid/rmqrnq.cpp}
+{kENN3N}
+
+\Algorithm{RMQ and RUQ}
+{}{}
+{cpp}{code/cpp/Monoid/rmqruq.cpp}
+{kENN3N}
+
+\Algorithm{RSQ and RNQ}
+{}{}
+{cpp}{code/cpp/Monoid/rsqrnq.cpp}
+{kENN3N}
+
+\Algorithm{RSQ and RUQ}
+{}{}
+{cpp}{code/cpp/Monoid/rsqruq.cpp}
+{kENN3N}
+
+\Algorithm{Maximum Array(Struct Segment)}
+{}{}
+{cpp}{code/cpp/Monoid/maximum.cpp}
+{kENN3N}
+
+\pagebreak 
+\section{DP}
+
+\Algorithm{Doubling(Sparse Table)}
+{}{}
+{cpp}{code/cpp/Dp/doubling.cpp}
+{kENN3N}
+
+\Algorithm{Streetlight(prefix sum + dp)}
+{}{}
+{cpp}{code/cpp/Dp/streetlight.cpp}
+{kENN3N}
+
+\pagebreak
+\section{Geometry}
+
+\Algorithm{vector2}
+{}{}
+{cpp}{code/cpp/Geometry/vector2.cpp}
+{kENN3N}
+
+\Algorithm{vector3}
+{}{}
+{cpp}{code/cpp/Geometry/vector3.cpp}
+{kENN3N}
+
+\Algorithm{Line Intersection}
+{}{}
+{cpp}{code/cpp/Geometry/lineIntersection.cpp}
+{kENN3N}
+
+\Algorithm{Convex Hull}
+{}{}
+{cpp}{code/cpp/Geometry/convexHull.cpp}
+{kENN3N}
+
+\Algorithm{Rotating Callipers}
+{}{}
+{cpp}{code/cpp/Geometry/rotatingCallipers.cpp}
+{kENN3N}
+
+\Algorithm{Angle Sort}
+{}{}
+{cpp}{code/cpp/Geometry/angleSort.cpp}
+{kENN3N}
+
+\pagebreak
+\section{Graph}
+
+\Algorithm{Floyd warshall}
+{}{O(n^3)}
+{cpp}{code/cpp/Graph/floyd.cpp}
+{kENN3N}
+
+\Algorithm{scc}
+{}{}
+{cpp}{code/cpp/Graph/scc.cpp}
+{kENN3N}
+
+\Algorithm{2-sat}
+{}{}
+{cpp}{code/cpp/Graph/2sat.cpp}
+{kENN3N}
+
+\Algorithm{hld}
+{}{}
+{cpp}{code/cpp/Graph/hld.cpp}
+{kENN3N}
+
+\Algorithm{Bellman Ford}
+{}{}
+{cpp}{code/cpp/Graph/bellmanFord.cpp}
+{kENN3N}
+
+\Algorithm{Maxflow}
+{}{$O(n+m)\sqrt n$, $O(n^2m)$}
+{cpp}{code/cpp/Graph/maxflow.cpp}
+{kENN3N}
+
+\Algorithm{Min cost Max Flow}
+{}{$O(F(n+m)log(n+m))$}
+{cpp}{code/cpp/Graph/mcmf.cpp}
+{kENN3N}
+
+\pagebreak
+\section{Math}
+
+\Algorithm{Combination}
+{}{}
+{cpp}{code/cpp/Math/combination.cpp}
+{kENN3N}
+
+\Algorithm{FFT - int}
+{}{}
+{cpp}{code/cpp/Math/fftInt.cpp}
+{kENN3N}
+
+\Algorithm{FFT - ll (Dnc + CRT)}
+{}{}
+{cpp}{code/cpp/Math/fftLl.cpp}
+{kENN3N}
+
+\Algorithm{Pollard Rho (with fast prime check)}
+{}{}
+{cpp}{code/cpp/Math/pollardRho.cpp}
+{kENN3N}
+
+\Algorithm{Permutation and Combination}
+{}{}
+{cpp}{code/python/Math/permAndComb.py}
+{dustin36}
+
+\Algorithm{Pairwise Product Sum}
+{}{}
+{cpp}{code/python/Math/pairwiseProductSum.py}
+{dustin36}
+
+\Algorithm{Modular Divide}
+{}{}
+{cpp}{code/python/Math/modularDivide.py}
+{dustin36}
+
+\pagebreak
+\section{String}
+
+\Algorithm{KMP}
+{}{}
+{cpp}{code/cpp/String/kmp.cpp}
+{kENN3N}
+
+\Algorithm{Z}
+{}{}
+{cpp}{code/cpp/String/z.cpp}
+{kENN3N}
+
+\Algorithm{Trie and Ahocorasick}
+{}{}
+{cpp}{code/cpp/String/trieAhocora.cpp}
+{kENN3N}
+
+\Algorithm{Suffix Automaton}
+{}{}
+{cpp}{code/cpp/String/suffixAutomaton.cpp}
+{kENN3N}
+
+\pagebreak
+\section{etc}
+
+\Algorithm{Deque Trick}
+{}{}
+{cpp}{code/cpp/etc/dequeTrick.cpp}
+{kENN3N}
+
+\Algorithm{imos rectangle and diamond}
+{}{}
+{cpp}{code/cpp/etc/imosRectAndDia.cpp}
+{kENN3N}
+
+\Algorithm{imos triangle}
+{}{}
+{cpp}{code/cpp/etc/imosTriangle.cpp}
+{kENN3N}
+
+\Algorithm{mo's algorithm}
+{}{}
+{cpp}{code/cpp/etc/mo.cpp}
+{kENN3N}
+
+\Algorithm{random generator}
+{}{}
+{cpp}{code/cpp/etc/random.cpp}
+{kENN3N}
+
+% \Algorithm{Coordination Compress}
+% {}{}
+% {cpp}{code/cpp/etc/compress.cpp}
+% {kENN3N}
+
+\pagebreak
+\section{Note and Checklist}
+
+\Algorithm{etc formular}
+{}{}
+{cpp}{code/cpp/Note/etc.cpp}
+{kENN3N}
+
+\Algorithm{pisano}
+{}{}
+{cpp}{code/cpp/Note/pisano.cpp}
+{kENN3N}
+
+\Algorithm{Ternary Search}
+{}{}
+{cpp}{code/cpp/Note/ternarySearch.cpp}
+{kENN3N}
+
+% \Algorithm{구간별 약수 최대 개수, 최대 소수}{}{}{}{}{koosaga}
+% \begin{minted}{cpp}
+% < 10^k          number     divisors   2 3 5 71113171923293137
+% -------------------------------------------------------------
+% 1                    6            4   1 1
+% 2                   60           12   2 1 1
+% 3                  840           32   3 1 1 1
+% 4                 7560           64   3 3 1 1
+% 5                83160          128   3 3 1 1 1
+% 6               720720          240   4 2 1 1 1 1
+% 7              8648640          448   6 3 1 1 1 1
+% 8             73513440          768   5 3 1 1 1 1 1
+% 9            735134400         1344   6 3 2 1 1 1 1
+% 10          6983776800         2304   5 3 2 1 1 1 1 1
+% 11         97772875200         4032   6 3 2 2 1 1 1 1
+% 12        963761198400         6720   6 4 2 1 1 1 1 1 1
+% 13       9316358251200        10752   6 3 2 1 1 1 1 1 1 1
+% 14      97821761637600        17280   5 4 2 2 1 1 1 1 1 1
+% 15     866421317361600        26880   6 4 2 1 1 1 1 1 1 1 1
+% 16    8086598962041600        41472   8 3 2 2 1 1 1 1 1 1 1
+% 17   74801040398884800        64512   6 3 2 2 1 1 1 1 1 1 1 1
+% 18  897612484786617600       103680   8 4 2 2 1 1 1 1 1 1 1 1
+
+% < 10^k    prime   # of prime          < 10^k            prime
+% -------------------------------------------------------------
+% 1             7            4          10           9999999967
+% 2            97           25          11          99999999977
+% 3           997          168          12         999999999989
+% 4          9973         1229          13        9999999999971
+% 5         99991         9592          14       99999999999973
+% 6        999983        78498          15      999999999999989
+% 7       9999991       664579          16     9999999999999937
+% 8      99999989      5761455          17    99999999999999997
+% 9     999999937     50847534          18   999999999999999989
+% \end{minted}
+
+% \Algorithm{카탈란 수, 심슨 적분, 그런디 정리, 픽의 정리, 페르마 포인트, 오일러 정리}
+% {}{}{}{}{}
+% \begin{itemize}
+% \setlength\itemsep{0.1em}
+    
+% \item 카탈란 수\\
+% 1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786, 208012,742900\\
+% $C_n = binomial(n * 2, n) / (n + 1);$\\
+% - 길이가 2n인 올바른 괄호 수식의 수\\
+% - n + 1개의 리프를 가진 풀 바이너리 트리의 수\\
+% - n + 2각형을 n개의 삼각형으로 나누는 방법의 수
+
+% \item 알고리즘 게임\\
+% - Nim Game의 해법 : 각 더미의 돌의 개수를 모두 XOR했을 때 0 이 아니면 첫번째, 0 이면 두번째 플레이어가 승리.\\
+% - Grundy Number : 어떤 상황의 Grundy Number는, 가능한 다음 상황들의 Grundy Number를 모두 모은 다음, 그 집합에 포함 되지 않는 가장 작은 수가 현재 state의 Grundy Number가 된다. 만약 다음 state가 독립된 여러개의 state들로 나뉠 경우, 각각의 state의 Grundy Number의 XOR 합을 생각한다.\\
+% - Subtraction Game : 한 번에 k 개까지의 돌만 가져갈 수 있는 경우, 각 더미의 돌의 개수를 k + 1로 나눈 나머지를 XOR 합하여 판단한다.\\
+% - Index-k Nim : 한 번에 최대 k개의 더미를 골라 각각의 더미에서 아무렇게나 돌을 제거할 수 있을 때, 각 binary digit에 대하여 합을 k + 1로 나눈 나머지를 계산한다. 만약 이 나머지가 모든 digit에 대하여 0이라면 두번째, 하나라도 0이 아니라면 첫번째 플레이어가 승리.\\
+% - Misere Nim : 모든 돌 무더기가 1이면 N이 홀수일 때 후공 승, 그렇지 않은 경우 XOR 합 0이면 후공 승
+
+% \item 오일러 정리: 서로소인 두 정수 $a,n$에 대해 $a^{\phi(n)}\equiv 1 \pmod n$\\
+% 모든 정수에 대해 $a^n \equiv a^{n-\phi(n)} \pmod n$\\
+% $m\geq log_2 n$이면 $a^m\equiv a^{m\%\phi(n)+\phi(n)}\pmod n$
+
+% \item $g^0+g^1+g^2+\cdots g^{p-2}\equiv -1 \pmod p$ iff $g=1$, otherwise $0$.
+
+% \end{itemize}
+
+% \Algorithm{경우의 수 - 포함 배제, 스털링 수, 벨 수}
+% {}{}{}{}{}
+% \begin{itemize}
+% \setlength\itemsep{0.1em}
+
+% \item 공 구별 X, 상자 구별 O, 전사함수 : 포함배제 $\sum_{i=1}^{k} (-1)^{k-i} \times kCi \times i^n$
+% \item 공 구별 O, 상자 구별 X, 전사함수 : 제 2종 스털링 수 $S(n,k)=k\times S(n-1,k) + S(n-1, k-1)$\\
+% 포함배제하면 $O(K \log N)$, $S(n,k) = 1/k! \times \sum_{i=1}^{k} (-1)^{k-i} \times kCi \times i^n$
+% \item 공 구별 O, 상자 구별 X, 제약없음 : 벨 수 $B(n,k) = \sum_{i=0}^{k} S(n,i)$ 몇 개의 상자를 버릴지 다 돌아보기\\
+% 수식 정리하면 $O(\min(N,K)\log N)$에 됨. $B(n,n) = \sum_{i=0}^{n-1} (n-1)Ci \times B(i,i)$\\
+% $B(n,k)=\sum_{j=0}^{k}S(n,j) = \sum_{j=0}^{k} 1/j! \sum_{i=0}^{j} (-1)^{j-i} jCi \times i^n=\sum_{j=0}^{k}\sum_{i=0}^{j} \frac{(-1)^{j-i}}{i!(j-i)!}i^n$\\
+% $=\sum_{i=0}^{k}\sum_{j=i}^{k}\frac{(-1)^{j-i}}{i!(j-i)!}i^n = \sum_{i=0}^{k}\sum_{j=0}^{k-i}\frac{(-1)^j}{i!j!}i^n = \sum_{i=0}^k \frac{i^n}{i!}\sum_{j=0}^{k-i} \frac{(-1)^j}{j!}$
+
+% \item Derangement: $D(n)=(n-1)(D(n-1)+D(n-2))$
+% \item Signed Stirling 1: $S_1(n,k)=(n-1)S_1(n-1,k)+S_1(n-1,k-1)$
+% \item Unsigned Stirling 1: $C_1(n,k)=(n-1)C_1(n-1,k)+C_1(n-1,k-1)$
+% \item Stirling 2: $S_2(n,k)=kS_2(n-1,k)+S_2(n-1,k-1)$
+% \item Stirling 2: $S_2(n,k)=\frac{1}{k!}\sum_{j=0}^{k} (-1)^{k-j}{k \choose j}j^n$
+% \item Partition: $p(n,k)=p(n-1,k-1) + p(n-k,k)$
+% \item Partition: $p(n)=\sum (-1)^kp(n-k(3k-1)/2)$
+% \item Bell: $B(n)=\sum_{k=1}^n {n-1\choose k-1}B(n-k)$
+% \item Catalan: $C_n=\frac{1}{n+1}{2n\choose n}$
+% \item Catalan: $C_n={2n\choose n}-{2n\choose n+1}$
+% \item Catalan: $C_n=\frac{(2n)!}{n!(n+1)!}$
+% \item Catalan: $C_n=\sum C_iC_{n-i}$
+
+% \end{itemize}
+
+% \Algorithm{삼각형의 오심 - 외심, 내심, 무게중심, 수심, 방심}
+% {}{}{}{}{Ryute}
+
+% 변 길이 $a, b, c; p = (a+b+c)/2$ \\
+% 넓이 $A = \sqrt{p(p-a)(p-b)(p-c)}$ \\
+% 외접원 반지름 $R = abc/4A$, 내접원 반지름 $r = A/p$ \\
+% 중선 길이 $m_a = 0.5\sqrt{2b^2 + 2c^2 - a^2}$ \\
+% 각 이등분선 길이 $s_a = \sqrt{bc(1-\frac{a}{b+c}^2)}$ \\
+% 사인 법칙 $\frac{sin A}{a} = 1/2R$, 코사인 법칙 $a^2 = b^2 + c^2 - 2bc\cos A$, 탄젠트 법칙 $\frac{a+b}{a-b} = \frac{\tan (A+B)/2}{\tan (A-B)/2}$ \\
+% 중심 좌표 $(\frac{\alpha x_a + \beta x_b + \gamma x_c}{\alpha+\beta+\gamma}, \frac{\alpha y_a + \beta y_b + \gamma y_c}{\alpha+\beta+\gamma})$ \\
+
+% \begin{tabular}{|c|c|c|c|c|}
+%     이름 & $\alpha$ & $\beta$ & $\gamma$ & \\ \hline
+%     외심 & $a^2\mathcal{A}$ & $b^2\mathcal{B}$ & $c^2\mathcal{C}$ & $\mathcal{A}=b^2+c^2-a^2$ \\
+%     내심 & $a$ & $b$ & $c$ & $\mathcal{B} = a^2 + c^2 - b^2$ \\
+%     무게중심 & $1$ & $1$ & $1$ & $\mathcal{C} = a^2 + b^2 - c^2$ \\
+%     수심 & $\mathcal{BC}$ & $\mathcal{CA}$ & $\mathcal{AB}$ & \\
+%     방심(A) & $-a$ & $b$ & $c$ & 
+% \end{tabular}
+
+% \Algorithm{미적분, 뉴턴 랩슨법}{}{}{}{}{}
+% \begin{itemize}
+%     \setlength\itemsep{0.1em}
+%     \item $(\arcsin x)'=1/\sqrt{1-x^2}$
+%     \item $(\tan x)'=1+\tan^2 x$
+%     \item $\int tan ax=-\ln |\cos ax|/a$
+%     \item $(\arccos x)'=-1/\sqrt{1-x^2}$
+%     \item $(\arctan x)'=1/(1+x^2)$
+%     \item $\int x \sin ax=(\sin ax - ax\cos ax)/a^2$
+%     \item Newton: $x_{n+1}=x_{n}-f(x_n)/f'(x_n)$
+%     \item $\oint_C (Ldx+Mdy)=\int\int_D (\frac{\partial M}{\partial x}-\frac{\partial L}{\partial y})dxdy$
+%     \item where $C$ is positively oriented, piecewise smooth, simple, closed; $D$ is the region inside $C$; $L$ and $M$ have continuous partial derivatives in $D$.
+% \end{itemize}
+
+\Algorithm{문제 풀이 체크리스트}{}{}{}{}{}
+\begin{itemize}
+    \setlength\itemsep{0.1em}
+    \item 비슷한 문제를 풀어본 적이 있던가?
+    \item 단순한 방법에서 시작할 수 있을까? (Brute Force)
+    \item 내가 문제를 푸는 과정을 수식화할 수 있을까? (예제를 직접 해결해보면서)
+    \item 문제를 단순화할 수 없을까?
+    \item 그림으로 그려볼 수 있을까?
+    \item 수식으로 표현할 수 있을까?
+    \item 문제를 분해할 수 있을까?
+    \item 뒤에서부터 생각해서 풀 수 있을까?
+    \item 순서를 강제할 수 있을까?
+    \item 특정 형태의 답만을 고려할 수 있을까? (정규화)
+    \item 구간을 통째로 가져간다 : 플로우 + 적당한 자료구조 $(i,i+1,k,0),(s,e,1,w),(N,T,k,0)$
+    \item a = b : a만 움직이기, b만 움직이기, 두 개 동시에 움직이기, 반대로 움직이기
+    \item 말도 안 되는 것들을 한 번은 생각해보기 / "당연하다고 생각한 것" 다시 생각해보기
+    \item 확률 : DP, 이분 탐색(NYPC 2019 Finals C)
+    \item 최대/최소 : 이분 탐색, 그리디(Prefix 고정, Exchange Argument), DP(순서 고정)
+\end{itemize}
+
+\end{document}
